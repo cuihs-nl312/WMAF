@@ -77,8 +77,7 @@ Requirement
 
 How to use WMAF?
 ----------------
-You need to download mitogenomic data and write into a fasta format file (Note: Please rename the file so that it ends with .txt.)
-WMAF has been integrated into whole-mitogenome_sequence_alignment.py for sequence alignment at the whole-genome level. You can run whole-mitogenome_sequence_alignment.py using the command below.<br>
+You need to download mitogenomic data and write into a fasta format file (Note: Please rename the file so that it ends with .txt).WMAF has been integrated into whole-mitogenome_sequence_alignment.py for sequence alignment at the whole-genome level. You can run whole-mitogenome_sequence_alignment.py using the command below.<br>
 ```
 python whole-mitogenome_sequence_alignment.py --all_genome ALL_GENOME --reference_strainID REFERENCE_STRAINID --block BLOCK --cov COV
 ```
