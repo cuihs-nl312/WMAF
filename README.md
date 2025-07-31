@@ -204,7 +204,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
   ```
   生成的构建发育树的文件以.support结尾（`08.integrate_blocks.txt-gb-phylip.raxml.support`）。
 * 可视化系统发育树（使用forester.jar），经Inkscape美化后的发育树如下图：
-  
+![](https://github.com/cuihs-nl312/WMAF/blob/main/Example_data/08.inkescape.svg)
   
   
 
