@@ -38,10 +38,10 @@ Requirement
       tar -zxvf Python-3.13.5.tgz
       mkdir install_Python-3.13.5
       ```
-    * Configure the compilation options (assuming the installation path is /home/install/python/install_Python-3.13.5/bin).
+    * Configure the compilation options (assuming the installation path is /home/install/python/install_Python-3.13.5).
       ```
       cd Python-3.13.5
-      ./configure --prefix=..../install_Python-3.13.5
+      ./configure --prefix=/home/install/python/install_Python-3.13.5
       ```
     * Compile and install.
       ```
