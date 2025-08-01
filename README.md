@@ -198,7 +198,7 @@ Parameter  | detailed information|
 --------- | --------|
 all_genome  | a fasta file containing all genomes; Please modify the file name to end with .txt. |
 reference_strainID  | reference strain ID, such as 'DRR332962' |
-block  | The size of the smallest block, such as '200' |
+block  | The length of the minimum block, such as '200' |
 cov  | The smallest number of genomes aligned to the reference genome |
 
 Example
