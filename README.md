@@ -60,7 +60,33 @@ Requirement
       ```
       source ~/.bashrc
       ```
- 
+* blast+ (available at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)，下载ncbi-blast-2.17.0+-x64-linux.tar.gz。
+  * 找到ncbi-blast-2.17.0+-x64-linux.tar.gz，鼠标右键点击复制链接，使用wget + 复制链接进行下载：
+    ```
+    wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.17.0+-x64-linux.tar.gz
+    ```
+  * 解压缩：
+    ```
+    tar -zxvf ncbi-blast-2.17.0+-x64-linux.tar.gz
+    ```
+  * 进入目录找到bin文件夹（该文件夹包含运行程序，假设该文件夹路径为/home/install/blast/ncbi-blast-2.17.0+/bin），配置环境变量：
+    * 编辑配置文件：
+      ```
+      vi ~/.bashrc
+      ```
+    * 添加配置：
+      ```
+      export PATH=/home/install/blast/ncbi-blast-2.17.0+/bin:$PATH
+      ```
+    * 立即执行：
+      ```
+      source ~/.bashrc
+      ```
+      
+    
+    
+  
+  
 * Muscle v5.3 （available at https://www.drive5.com/muscle5/ ） <br>
   * 下载Muscle v5.3源码(此版本为二进制文件，下载后不需要解压缩)：
     ```
@@ -74,6 +100,29 @@ Requirement
     ```
     mv muscle-linux-x86.v5.3 muscle
     ```
+
+* Gblocks 0.91b (available at https://www.biologiaevolutiva.org/jcastresana/Gblocks.html; https://slackbuilds.org/repository/14.2/academic/Gblocks/)
+  * 下载Gblocks_Linux_0.91b.tar.Z并解压缩
+    ```
+    wget https://www.biologiaevolutiva.org/jcastresana/Gblocks/Gblocks_Linux64_0.91b.tar.Z
+    tar -zxvf Gblocks_Linux64_0.91b.tar.Z
+    ```
+  * 生成Gblocks_0.91b文件夹，进入文件夹（如在/home/install/Gblocks/Gblocks_0.91b;发现可执行的程序Gblocks），配置环境变量全局调用Gblocks。
+    * 使用vi编辑器修改环境变量配置文件
+      ```
+      vi ~/.bashrc
+      ```
+    * 输入“i”，进入“insert”模式（即“可编辑”）；在文件末尾添加配置。
+      ```
+      export PATH=/home/install/Gblocks/Gblocks_0.91b:$PATH
+      ```
+    * 按“Esc”退出编辑，输入“:wq”，保存。
+    * 立即执行配置。
+      ```
+      source ~/.bashrc
+      ```
+    * 在任意目录下调用Gblocks，可以识别Gblocks并且使用，则表示安装完成。
+    
 
 How to use WMAF?
 ===============
