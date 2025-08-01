@@ -250,7 +250,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
   ```
   python integrate_aligned_blocks.py --strainID 00.genomeID_list --block_path_list block_path_list --output 08.integrate_blocks.txt
   ```
-* Use Gblocks to remove unreliable or highly variable sequence segments from the alignment results, thereby improving the accuracy of subsequent phylogenetic analyses (such as constructing phylogenetic trees). Name the generated file with the suffix "-gb" (for example: `08.integrate_blocks.txt-gb`).
+* Use `Gblocks` to remove unreliable or highly variable sequence segments from the alignment results, thereby improving the accuracy of subsequent phylogenetic analyses (such as constructing phylogenetic trees). Name the generated file with the suffix "-gb" (for example: `08.integrate_blocks.txt-gb`).
 * Modify the format of `08.integrate_blocks.txt-gb`.
   * The original format of the file is as follows:
     ```
@@ -275,7 +275,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
     ATATTAGGAATAAAGAACTATAGAATAAGCTAAATACTTAATAAAAAATATAAAAAATTA
     TATAAAAATAAAAGGAAAGTAATATTTATCTATAGTCAAGCCAATAATGGTTTAGGTAGT
     ```
-* Use Jmodeltest to predict the optimal model for constructing a phylogenetic tree (assuming the installation path of `JmodelTest.jar` is `/home/install/jmodeltest/jmodeltest-2.1.10/jModelTest.jar`):
+* Use `Jmodeltest` to predict the optimal model for constructing a phylogenetic tree (assuming the installation path of `JmodelTest.jar` is `/home/install/jmodeltest/jmodeltest-2.1.10/jModelTest.jar`):
   * Create a shell script file to run the program in the background using the nohup command.
   ```
   cat >09.run_jmodeltest.sh
@@ -298,7 +298,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
   ```
   fasta2phylip.pl 08.integrate_blocks.txt-gb > 08.integrate_blocks.txt-gb-phylip
   ```
-* Use RAxML to construct a phylogenetic tree.
+* Use `RAxML` to construct a phylogenetic tree.
   ```
   cat >10.run_raxmal.sh
   raxml-ng --all --msa 08.integrate_blocks.txt-gb-phylip --threads 2 --model GTR+I+G4 --bs-trees 500
@@ -309,7 +309,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
   nohup sh 10.run_raxmal.sh > 10.run_raxmal.sh.log &
   ```
   Generate the file used for constructing the phylogenetic tree with the suffix ".support" (`08.integrate_blocks.txt-gb-phylip.raxml.support`).
-* Use forester.jar to visualize the phylogenetic tree.
+* Use `forester.jar` to visualize the phylogenetic tree.
   * Click "`File`" in the navigation bar, then click "`Read Tree from File ...`".
   * Upload the "`.support`" file.
   * Click "`Options`", select "`Scale`" to display the phylogenetic tree scale; then click "`Select Color Scheme ...`" and choose "`Black & White`" to set the color background.
@@ -317,6 +317,7 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
   * The phylogenetic tree will now be fully displayed.
   
 * The phylogenetic tree after being refined with Inkscape is as follows:
+  <br>
 ![](https://github.com/cuihs-nl312/WMAF/blob/main/Example_data/08.inkescape.svg)
   
   
