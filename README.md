@@ -38,7 +38,7 @@ Requirement
       tar -zxvf Python-3.13.5.tgz
       mkdir install_Python-3.13.5
       ```
-    * Configure the compilation options (assuming the installation path is /home/install/python/install_Python-3.13.5).
+    * Configure the compilation options (assuming the installation path is `/home/install/python/install_Python-3.13.5`).
       ```
       cd Python-3.13.5
       ./configure --prefix=/home/install/python/install_Python-3.13.5
@@ -52,7 +52,7 @@ Requirement
       ```
       vi ~/.bashrc
       ```
-      Type "i" to enter "insert" mode (i.e., "editable mode"); add the configuration information at the end of the file.
+      Type "i" to enter insert mode (i.e., "editable mode"); add the configuration information at the end of the file.
       ```
       export PATH=/home/install/python/install_Python-3.13.5/bin:$PATH
       ```
@@ -80,8 +80,8 @@ Requirement
   sudo apt install openjdk-11-jdk
   ```
 
-* blast+ (available at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Download ncbi-blast-2.17.0+-x64-linux.tar.gz.
-  * Locate ncbi-blast-2.17.0+-x64-linux.tar.gz, right-click the mouse and select "Copy link", then use wget plus the copied link to download it:
+* blast+ (available at https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/). Download `ncbi-blast-2.17.0+-x64-linux.tar.gz`.
+  * Locate `ncbi-blast-2.17.0+-x64-linux.tar.gz`, right-click the mouse and select "Copy link", then use wget plus the copied link to download it:
     ```
     wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.17.0+-x64-linux.tar.gz
     ```
@@ -89,7 +89,7 @@ Requirement
     ```
     tar -zxvf ncbi-blast-2.17.0+-x64-linux.tar.gz
     ```
-  * Go to the directory and find the bin folder (this folder contains the running program, assuming the path to this folder is /home/install/blast/ncbi-blast-2.17.0+/bin), and configure the environment variables:
+  * Go to the directory and find the bin folder (this folder contains the running program, assuming the path to this folder is `/home/install/blast/ncbi-blast-2.17.0+/bin`), and configure the environment variables:
     * Edit the configuration file:
       ```
       vi ~/.bashrc
@@ -118,12 +118,12 @@ Requirement
     ```
 
 * Gblocks 0.91b (available at https://www.biologiaevolutiva.org/jcastresana/Gblocks.html; https://slackbuilds.org/repository/14.2/academic/Gblocks/). <br>
-  * Download Gblocks_Linux_0.91b.tar.Z and decompress it.
+  * Download `Gblocks_Linux_0.91b.tar.Z` and decompress it.
     ```
     wget https://www.biologiaevolutiva.org/jcastresana/Gblocks/Gblocks_Linux64_0.91b.tar.Z
     tar -zxvf Gblocks_Linux64_0.91b.tar.Z
     ```
-  * Go to the Gblocks_0.91b folder (for example, in /home/install/Gblocks/Gblocks_0.91b; you'll find the executable program Gblocks), and configure the environment variables to call Gblocks globally.
+  * Go to the `Gblocks_0.91b` folder (for example, in `/home/install/Gblocks/Gblocks_0.91b`; you'll find the executable program Gblocks), and configure the environment variables to call Gblocks globally.
     * Use the vi editor to modify the environment variable configuration file.
       ```
       vi ~/.bashrc
@@ -144,11 +144,11 @@ Requirement
     ```
     wget https://github.com/ddarriba/jmodeltest2/archive/refs/tags/v2.1.10r20160303.tar.gz
     ```
-  * Decompress jmodeltest-2.1.10.tar.gz.
+  * Decompress `jmodeltest-2.1.10.tar.gz`.
     ```
     tar -zxvf jmodeltest-2.1.10.tar.gz
     ```
-  * Configure the directory where jModelTest.jar is located.
+  * Configure the directory where `jModelTest.jar` is located.
     ```
     vi ~/.bashrc
     ```
@@ -187,7 +187,7 @@ Requirement
 
 How to use WMAF?
 ===============
-You need to download mitogenomic data and write into a fasta format file (Note: Please rename the file so that it ends with .txt).WMAF has been integrated into whole-mitogenome_sequence_alignment.py for sequence alignment at the whole-genome level. You can run whole-mitogenome_sequence_alignment.py using the command below.<br>
+You need to download mitogenomic data and write into a fasta format file (Note: Please rename the file so that it ends with .txt).WMAF has been integrated into `whole-mitogenome_sequence_alignment.py` for sequence alignment at the whole-genome level. You can run `whole-mitogenome_sequence_alignment.py` using the command below.<br>
 ```
 python whole-mitogenome_sequence_alignment.py --all_genome ALL_GENOME --reference_strainID REFERENCE_STRAINID --block BLOCK --cov COV
 ```
@@ -219,11 +219,11 @@ In this case, the mitogenomic data are from Saccharomyces species and downloaded
    less 00.integrate_13_Saccharomyces_genomes.txt |grep -v '^$' > cc
    mv cc 00.integrate_13_Saccharomyces_genomes.txt
    ```
-* Run `whole-mitogenome_sequence_alignment.py` (using the S288c strain as the reference mitochondrial genome; set the minimum block length to 200; set the number of strains covering the reference genome to 13).
+* Run `whole-mitogenome_sequence_alignment.py` (using the `S288c` strain as the reference mitochondrial genome; set the minimum block length to `200`; set the number of strains covering the reference genome to `13`).
  ```
  python whole-mitogenome_sequence_alignment.py --all_genome 00.integrate_13_Saccharomyces_genomes.txt --reference_strainID S288c --block 200 --cov 13
  ```
-* When the program finishes running, several block files will appear (for example: one-block-S288c.13774-13987.muscle). Use `integrate_aligned_blocks.py` to concatenate the alignment results of each block. The parameter `00.genomeID_list` required by the program has been automatically generated in the previous step.
+* When the program finishes running, several block files will appear (for example: `one-block-S288c.13774-13987.muscle`). Use `integrate_aligned_blocks.py` to concatenate the alignment results of each block. The parameter `00.genomeID_list` required by the program has been automatically generated in the previous step.
   * Prepare the `block_path_list` file, which needs to be created manually. The command is as follows (the blocks need to be arranged in order):
   ```
   cat >block_path_list
