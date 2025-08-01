@@ -14,7 +14,7 @@ Windows users can use the Windows Subsystem for Linux (WSL) to run WMAF. And you
 
 Requirement 
 -----------
-* python3 or higher is required <br>
+* Python3 or higher is required <br>
   * Install using a package manager.
     * Update the package repository.
       ```
@@ -61,7 +61,8 @@ Requirement
       ```
       source ~/.bashrc
       ```
-* perl. Most Linux distributions come pre-installed with Perl.
+      
+* Perl. Most Linux distributions come pre-installed with Perl.
   * Check if Perl is installed on the Linux system. If it is installed, the version information will be displayed.
     ```
     perl -v
@@ -137,6 +138,7 @@ Requirement
       source ~/.bashrc
       ```
     * If you can call Gblocks in any directory and it can be recognized and used, it means the installation is complete.
+      
 * Jmodeltest v2.1.10 (available at https://github.com/ddarriba/jmodeltest2/releases).
   * Download Jmodeltest v2.1.10.
     ```
@@ -180,6 +182,7 @@ Requirement
     ```
     source ~/.bashrc
     ```
+    
 * Forester.jar (available at https://github.com/cmzmasek/forester), Download it to the Windows system and double-click to run it.
 
 How to use WMAF?
