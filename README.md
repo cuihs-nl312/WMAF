@@ -205,7 +205,7 @@ cov  | The smallest number of genomes aligned to the reference genome |
 
 Example
 =======
-In this case, the mitogenomic data are from Saccharomyces species and downloaded from National Center for Biotechnology Information (NCBI: https://www.ncbi.nlm.nih.gov/). You can download it on this project (`00.integrate_13_Saccharomyces_genomes.txt`) and copy it under Linux system.<br>
+In this case, we aim to perform a global alignment of the mitochondrial genomes from 13 Saccharomyces strains using WMAF, and then construct a phylogenetic tree of these Saccharomyces strains based on the alignment results. The mitogenomic data of Saccharomyces species downloaded from National Center for Biotechnology Information (NCBI: https://www.ncbi.nlm.nih.gov/). You can download it on this project (`00.integrate_13_Saccharomyces_genomes.txt`) and copy it under Linux system.<br>
 *Check the file format.
   * Ensure that the file content is in Fasta format.
   * Files transferred from the Windows system to the Linux system need to have their format modified.
