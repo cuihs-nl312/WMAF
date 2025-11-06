@@ -76,7 +76,6 @@ Requirement
 * Java. In Linux systems, Java typically exists in the form of OpenJDK or Oracle JDK. You can install OpenJDK via a package manager, for example:
   ```
   sudo apt update
-  sudo apt update
   sudo apt install openjdk-11-jdk
   ```
 
