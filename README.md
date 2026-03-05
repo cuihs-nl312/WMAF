@@ -324,7 +324,7 @@ In this case, we aim to perform a global alignment of the mitochondrial genomes 
 
 Reference
 =========
-Cui H, Zhang L, Liu T, Lin R. WMAF: One novel method for whole mitogenome alignment in fungi and its application in phylogenetic analysis. Fungal Genet Biol. Published online February 6, 2026. doi:10.1016/j.fgb.2026.104068.
+Cui H, Zhang L, Liu T, Lin R. WMAF: One novel method for whole mitogenome alignment in fungi and its application in phylogenetic analysis. Fungal Genet Biol. Published online February 6, 2026. doi:10.1016/j.fgb.2026.104068.(https://doi.org/10.1016/j.fgb.2026.104068)
   
   
 
