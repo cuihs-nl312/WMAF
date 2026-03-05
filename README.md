@@ -321,6 +321,10 @@ In this case, we aim to perform a global alignment of the mitochondrial genomes 
 * The phylogenetic tree after being refined with Inkscape is as follows:
   <br>
 ![](https://github.com/cuihs-nl312/WMAF/blob/main/Example_data/08.inkescape.svg)
+
+Reference
+=========
+Cui H, Zhang L, Liu T, Lin R. WMAF: One novel method for whole mitogenome alignment in fungi and its application in phylogenetic analysis. Fungal Genet Biol. Published online February 6, 2026. doi:10.1016/j.fgb.2026.104068.
   
   
 
